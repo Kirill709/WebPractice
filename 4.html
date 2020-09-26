@@ -1,0 +1,21 @@
+<html>
+<body>
+<script language="JavaScript">
+
+	userName = ""+ document.location;
+	n1 = userName.indexOf("=")+1;
+	userName= userName.substring(n1);
+	n1= userName.indexOf("=")+1;
+	subject=userName.substr(0,n1-1);
+
+	userName= userName.substring(n1);
+	n1= userName.indexOf("=")+1;
+	name=userName.substr(0,n1-1);
+
+	email= userName.substring(n1);
+
+	document.write("<p>Здравствуйте, " + name + ", Я свяжусь с Вами по данным контактам: " + email +"!")
+</script>
+
+</body>
+</html>
